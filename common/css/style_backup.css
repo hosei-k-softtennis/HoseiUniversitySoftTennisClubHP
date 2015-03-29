@@ -1,0 +1,138 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100);
+
+body {
+    color: #ffffff;
+    background-color: #00267f;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+a:hover {
+    font-family: 'Lato', sans-serif;
+    color: #c0c0c0
+}
+
+#page {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* 見出し */
+.clubName {
+    font-size: 26px;
+    line-height: 1.231;
+    padding: 0;
+    padding-left: 30px;
+    margin: 10px 0;
+}
+
+.hoseiUniversity {
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    color: #ff710a;
+    /* border-left: solid 5px #E3E34D; */
+    /* padding-left: 10px; */
+    margin-top: 50px;
+    margin-bottom: 0;
+    line-height: 0.9;
+}
+
+.softTennisClub {
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    color: #ff710a;
+    padding: 0;
+    margin: 0;
+    line-height: 0.9;
+}
+
+.wanted {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.pageTitle {
+    width: 490px;
+}
+
+.text {
+    padding: 10px 0;
+    width: 440px;
+}
+
+/* グローバルナビ */
+#pageHead .globalNavi {
+    border: solid #CCCCCC;
+    border-width: 1px 0;
+    padding: 5px 0;
+    margin-top: 30px;
+}
+
+#pageHead .globalNavi ul {
+    margin: 0;
+    padding: 0;
+}
+
+#pageHead .globalNavi ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#pageHead .globalNavi ul li {
+    list-style: none;
+    width: 122.5px;
+    float: left;
+    border-left: solid 1px #CCCCCC;
+    padding: 0 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.429;
+}
+
+#pageHead .globalNavi ul li:first-child {
+    border-left: none;
+}
+
+#pageHead .globalNavi ul li a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    line-height: 0.7;
+    padding: 10px 10px;
+}
+
+#pageHead .globalNavi ul li a:hover,
+#pageHead .globalNavi ul li.current {
+    background-color: #191970;
+}
+
+#pageHead .globalNavi ul li small {
+    font-size: 10px;
+    color: #808080;
+    padding: 0;
+    margin: 0;
+}
+
+#copyright small {
+    font-size: 12px;
+    line-height: 1.429;
+}
+
+#pageFoot {
+    margin-top: 30px;
+}
