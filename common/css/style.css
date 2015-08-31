@@ -212,8 +212,14 @@ p {
 /* 共通部分ここまで */
 
 /* Home */
+.two-column:after {
+    content:"";
+    display:block;
+    clear:both;
+}
 .homeTitle {
     width: 490px;
+    float: left;
 }
 
 .clubName {
@@ -258,6 +264,42 @@ p {
 .text {
     width: 440px;
     padding: 10px;
+}
+
+
+.topics .orange {
+    font-size: 64px;
+    line-height: 1.09375;
+    color: #ff710a;
+}
+
+.topics h2 {
+    font-family: 'Lato', sans-serif;
+    margin: 20px 10px;
+    border-bottom: solid 1px #CCCCCC;
+}
+
+
+
+.topicsList li {
+    margin: 10px 0px;
+    
+    list-style-type: none;
+}
+
+/* bxslider */
+.imageSlide {
+    width: 475px;
+    float: right;
+}
+.bxslider ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.bxslider ul li{
+    position: relative;
 }
 
 /* Topics */
