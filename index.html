@@ -14,20 +14,34 @@
     <link rel="shortcut icon" href="common/images/favicon.ico" type="image/x-ico" />
     <!-- <link rel="stylesheet" href="common/js/MagicLine/css/style.css" type="text/css" media="all" /> -->
 
-    <!-- MagicLine -->
-
+    <!-- jQuery -->
     <script src="common/js/jquery-1.10.1.min.js"></script>
+
+    <!-- bxSlider -->
+    <script src="common/js/jquery.bxslider/jquery.bxslider.js"></script>
+    <link rel="stylesheet" href="common/js/jquery.bxslider/jquery.bxslider.css" />
+    <script>
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+	auto: true,
+	speed: 1000,
+	pause: 4000
+      });
+    });
+    </script>
+
+    <!-- MagicLine -->
     <script src="common/js/MagicLine/js/jquery.color-RGBa-patch.js"></script>
     <script src="common/js/MagicLine/js/example.js"></script>
 
     <!-- ogq tag -->
-
+n
   </head>
 
   <body>
     <div id="page">
       <header id="pageHead">
-		
+
 	<nav class="globalNavi">
 	  <div class="nav-wrap">
 	    <ul class="group" id="example-one">
@@ -46,22 +60,49 @@
 	</nav>
       </header>
 
-      <div class="homeTitle">
-	<h2 class="hoseiUniversity">Hosei<br>University</h2>
+      <div id="pageBody">
+	<div class="two-column">
+	  <div class="homeTitle">
+	    <h2 class="hoseiUniversity">Hosei<br>University</h2>
 
-	<h1 class="clubName">法政大学工体連ソフトテニス部</h1>
+	    <h1 class="clubName">法政大学工体連ソフトテニス部</h1>
 
-	<h2 class="softTennisClub">Soft Tennis Club</h2>
+	    <h2 class="softTennisClub">Soft Tennis Club</h2>
 
-	<div class="text">
-	  <h3 class="wanted">Team members are now wanted!</h3>
-	  <p class="wantedText">If you are interested in our soft tennis club, regardless of experience or beginner, please come to our tennis court!</p>
+	    <div class="text">
+	      <h3 class="wanted">Team members are now wanted!</h3>
+	      <p class="wantedText">If you are interested in our soft tennis club, regardless of experience or beginner, please come to our tennis court!</p>
+	    </div>
+
+	  </div>
+
+	  <div class="imageSlide">
+	    <ul class="bxslider">
+	      <li>
+		<img src="common/images/top/1.png" width="500" height="392" alt="" />
+	      </li>
+	      <li>
+		<img src="common/images/top/2.png" width="500" height="392" alt="" />
+	      </li>
+	      <li>
+		<img src="common/images/top/3.png" width="500" height="392" alt="" />
+	      </li>
+	    </ul>
+	  </div>
+	</div>
+	<div class="topics">
+	  <h2><span class="orange">W</span>hat's New?</h2>
+	  <ul class="topicsList">
+	    <li><a href="topics/index.html#topics7">【当部活OBさまへ】50周年記念思い出話の寄稿様式について</a></li>
+	    <li><a href="topics/index.html#topics6">2015年度 新入生の方へ</a></li>
+	    <li><a href="topics/index.html#topics5">法政大学の広報にて紹介されました</a></li>
+	    <li><a href="topics/index.html#topics4">新入生の方へ(2014/03/08)</a></li>
+	    <li><a href="topics/index.html#topics3">ホームページをリニューアルしました</a></li>
+	    <li><a href="topics/index.html#topics2">入部希望者の方へ</a></li>
+	    <li><a href="topics/index.html#topics1">V3達成！！</a></li>
+	  </ul>
 	</div>
 
-      </div>
-      
-      <div class="imageSlide">
-	
       </div>
 
       <footer id="pageFoot">
