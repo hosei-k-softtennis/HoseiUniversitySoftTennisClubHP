@@ -211,7 +211,9 @@ p {
 
 /* 共通部分ここまで */
 
-/* Home */
+/*================================================
+ Home
+==================================================*/
 .two-column:after {
     content:"";
     display:block;
@@ -302,7 +304,9 @@ p {
     position: relative;
 }
 
-/* Topics */
+/*================================================
+ Topics
+==================================================*/
 .news h3 {
     border-left: solid 5px #ffa500;
     padding-left: 10px;
@@ -315,7 +319,9 @@ p {
     margin-bottom: 60px;
 }
 
-/* About */
+/*================================================
+ About
+==================================================*/
 .activities {
     margin-bottom: 50px;
 }
@@ -351,6 +357,24 @@ p {
 .activitiesArea .orange {
     font-size: 64px;
     line-height: 1.09375;
+    color: #ff710a;
+}
+
+/*================================================
+
+ member
+
+==================================================*/
+/* tableのCSSはtable.cssに記述してある */
+
+.grade {
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+}
+
+.grade .orange {
+    font-size: 50px;
     color: #ff710a;
 }
 
