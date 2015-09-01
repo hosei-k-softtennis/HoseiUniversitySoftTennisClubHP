@@ -385,3 +385,7 @@ ul.container li.button span.blue {
     color: red;
 }
 
+/* contact */
+.mailAddress {
+    margin-left: 30px;
+}
