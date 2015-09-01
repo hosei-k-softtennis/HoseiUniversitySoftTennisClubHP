@@ -1,0 +1,164 @@
+/* --------------------------------------------------
+   selfIntro Table
+-------------------------------------------------- */
+table.right {
+    width:460px;
+    border-collapse:separate;
+    margin-right:20px;
+    float:right;
+}
+
+table.left {
+    width:460px;
+    border-collapse:separate;
+    margin-left:20px;
+    float:left;
+}
+
+.line {
+    margin-bottom: 35px;
+}
+
+.line:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.selfIntro {
+    border-spacing: 0;
+	
+    border: 1px solid #CCC;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+         -o-border-radius: 6px;
+            border-radius: 6px;
+    box-shadow: 0 1px 1px #CCC;	
+}
+.selfIntro th,
+.selfIntro td {
+	text-align:center;
+    padding:10px;
+    background:#efecdd;
+    border-bottom:solid 1px #CCC;
+    border-right:solid 1px #CCC;
+}
+.selfIntro th {
+    background:#bfb29a;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+    color:#4B382B;
+}
+
+.selfIntro td{
+	word-break:break-all;
+	font-size:16px;
+	color:#673202;
+}
+.selfIntro td:nth-child(1){
+	font-size:13px;
+}
+
+/* -----------------------
+  左上角丸　最初の行の最初のセル
+----------------------- */
+.selfIntro tr:first-child th:first-child,
+.selfIntro tr:first-child td:first-child {
+    -webkit-border-radius: 6px 0 0 0;
+       -moz-border-radius: 6px 0 0 0;
+         -o-border-radius: 6px 0 0 0;
+            border-radius: 6px 0 0 0;
+}
+/* -----------------------
+  右上角丸　最初の行の最後のセル
+----------------------- */
+.selfIntro tr:first-child th:last-child,
+.selfIntro tr:first-child td:last-child {
+    -webkit-border-radius: 0 6px 0 0;
+       -moz-border-radius: 0 6px 0 0;
+         -o-border-radius: 0 6px 0 0;
+            border-radius: 0 6px 0 0;
+}
+/* -----------------------
+  左下角丸　最後の行の最初のセル
+----------------------- */
+.selfIntro tr:last-child th:first-child,
+.selfIntro tr:last-child td:first-child {
+    -webkit-border-radius: 0 0 0 6px;
+       -moz-border-radius: 0 0 0 6px;
+         -o-border-radius: 0 0 0 6px;
+            border-radius: 0 0 0 6px;
+}
+/* -----------------------
+  右下角丸　最後の行の最後のセル
+----------------------- */
+.selfIntro tr:last-child th:last-child,
+.selfIntro tr:last-child td:last-child {
+    -webkit-border-radius: 0 0 6px 0;
+       -moz-border-radius: 0 0 6px 0;
+         -o-border-radius: 0 0 6px 0;
+            border-radius: 0 0 6px 0;
+}
+/* --------------------------------------------
+  thaed,tbodyを使う場合の設定
+-------------------------------------------- */
+.selfIntro thead th {background:#e3dcd5;}
+.selfIntro thead+tbody th {background:#f4ede6;}
+.selfIntro tbody th {text-align:center;}/*IE*/
+/* -----------------------
+  左上角丸 thead内　最初の行の最初のセル
+----------------------- */
+.selfIntro thead tr:first-child th:first-child,
+.selfIntro thead tr:first-child td:first-child {
+    -webkit-border-radius: 6px 0 0 0;
+       -moz-border-radius: 6px 0 0 0;
+         -o-border-radius: 6px 0 0 0;
+            border-radius: 6px 0 0 0;
+			text-align: center;
+}
+/* -----------------------
+  右上角丸 thead内　最初の行の最後のセル
+----------------------- */
+.selfIntro thead tr:first-child th:last-child,
+.selfIntro thead tr:first-child td:last-child {
+    -webkit-border-radius: 0 6px 0 0;
+       -moz-border-radius: 0 6px 0 0;
+         -o-border-radius: 0 6px 0 0;
+            border-radius: 0 6px 0 0;
+			text-align: center;
+}
+/* -----------------------
+  角丸なし　thaedの後のtbody 最初の行の最初のセル
+  角丸なし　thaedの後のtbody 最初の行の最後のセル
+----------------------- */
+.selfIntro thead+tbody tr:first-child th:first-child,
+.selfIntro thead+tbody tr:first-child td:first-child,
+.selfIntro thead+tbody tr:first-child th:last-child,
+.selfIntro thead+tbody tr:first-child td:last-child {
+    -webkit-border-radius:0px;
+       -moz-border-radius:0px;
+         -o-border-radius:0px;
+            border-radius:0px;
+			text-align: center;
+}
+/* -----------------------
+  左下角丸　thaedの後のtbody 最後の行の最初のセル
+----------------------- */
+.selfIntro  tr:last-child th:first-child,
+.selfIntro tr:last-child td:first-child {
+	-webkit-border-radius: 0 0 0 6px;
+	-moz-border-radius: 0 0 0 6px;
+	-o-border-radius: 0 0 0 6px;
+	border-radius: 0 0 0 6px;
+	text-align: center;
+}
+/* -----------------------
+  右下角丸　thaedの後のtbody 最後の行の最後のセル
+----------------------- */
+.selfIntro thead+tbody tr:last-child th:last-child,
+.selfIntro thead+tbody tr:last-child td:last-child {
+    -webkit-border-radius: 0 0 6px 0;
+       -moz-border-radius: 0 0 6px 0;
+         -o-border-radius: 0 0 6px 0;
+            border-radius: 0 0 6px 0;
+			text-align: center;
+}   
