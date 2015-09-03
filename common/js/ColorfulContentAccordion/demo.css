@@ -86,7 +86,9 @@ li.button a.green span{
 li.button a.orange{
     /* background:url(img/orange.png) repeat-x top left; */
     
-    background-color: #ff710a;
+    /* background-color: #ff710a; */
+    background-color: rgba(255, 113, 10, 0.2);
+    border: solid 2px #ff710a;
     text-decoration: none;
     
 }
