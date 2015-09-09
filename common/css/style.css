@@ -328,7 +328,7 @@ p {
  About
 
 ==================================================*/
-.activities {
+.activitiesText {
     margin-bottom: 50px;
 }
 
@@ -555,4 +555,11 @@ ul.container li.button span.blue {
 ==================================================*/
 .mailAddress {
     margin-left: 30px;
+}
+
+.accessMapImage {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 8px solid #ff710a;
 }
