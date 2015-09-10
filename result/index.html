@@ -43,15 +43,27 @@
     </script>
 
     <!-- kwicks -->
-    <link rel="stylesheet" href="../common/js/kwicks/jquery.kwicks.css" />
-    <script type="text/javascript" src="../common/js/kwicks/jquery.kwicks.js"></script>
-    <script type='text/javascript'>
+    <!-- <link rel="stylesheet" href="../common/js/kwicks/jquery.kwicks.css" /> -->
+    <!-- <script type="text/javascript" src="../common/js/kwicks/jquery.kwicks.js"></script> -->
+    <!-- <script type='text/javascript'> -->
+    <!-- $(function() { -->
+    <!--   $('.kwicks').kwicks({ -->
+    <!--     maxSize : 150, -->
+    <!--     behavior: 'menu', -->
+    <!--     isVertical: true -->
+    <!--   }); -->
+    <!-- }); -->
+    <!-- </script> -->
+
+    <!-- FlexibleSlideToTopAccordion -->
+    <!-- <link rel="stylesheet" href="../common/js/FlexibleSlideToTopAccordion/css/demo.css" type="text/css" media="screen" /> -->
+    <link rel="stylesheet" href="../common/js/FlexibleSlideToTopAccordion/css/style.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../common/js/FlexibleSlideToTopAccordion/js/jquery.accordion.js"></script>
+    <script type="text/javascript">
     $(function() {
-      $('.kwicks').kwicks({
-        maxSize : 150,
-        behavior: 'menu',
-        isVertical: true
-      });
+
+      $('#st-accordion').accordion();
+
     });
     </script>
 
@@ -113,7 +125,7 @@
 	    <h3 class="va-title"><span class="orange">2015</span>年度<span class="blue">春</span>季理工系大会</h3>
 	    <div class="va-content">
               <!-- <p>Keith Johnson</p> -->
-	      <ul class="kwicks kwicks-vertical">
+	      <ul>
 		<li><a href="#">法政大学 3 - 2 東京理科大学</a>
 		  <table>
 		    <tr>
@@ -128,9 +140,18 @@
 		    <tr>
 		      <td>4</td><td>繪上小林</td><td> 4 - 5 </td><td>小原新島</td>
 		    </tr>
+		    <tr>
+		      <td>5</td><td>土井渡辺</td><td> 5 - 2 </td><td>田村高山</td>
+		    </tr>
 		  </table>
 		</li>
-		<li><a href="#">hoge</a></li>
+		<li><a href="#">法政大学 4 - 1 東京都市大学</a>
+		  <table>
+		    <tr>
+		      <td>1</td><td>戸塚鈴木</td><td> 1 - 5 </td><td>茂木島田</td>
+		    </tr>
+		  </table>
+		</li>
 		<li><a href="#">hoge</a></li>
 		<li><a href="#">hoge</a></li>
 		<li><a href="#">hoge</a></li>
@@ -140,12 +161,72 @@
 	  <div class="va-slice">
 	    <h3 class="va-title"><span class="orange">2014</span>年度<span class="blue">秋</span>季理工系大会</h3>
 	    <div class="va-content">
-              <p>Andrew Alaniz</p>
-              <ul>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Portfolio</a></li>
-		<li><a href="#">Contact</a></li>
-              </ul>
+              <!-- <p>Andrew Alaniz</p> -->
+              <div id="st-accordion" class="st-accordion">
+		<ul>
+		  <li>
+		    <a href="#">
+                      法政大学 3 - 2 東京都市大学
+                      <span class="st-arrow">Open or Close</span>
+		    </a>
+		    <div class="st-content">
+                      <table>
+			<tr>
+			  <td>1</td><td>戸塚鈴木</td><td> 2 - 5 </td><td>坂本貴島</td>
+			</tr>
+			<tr>
+			  <td>2</td><td>中村富井</td><td> 5 - 1 </td><td>小林青島</td>
+			</tr>
+			<tr>
+			  <td>3</td><td>内田斉藤</td><td> 5 - 4 </td><td>濱崎大橋</td>
+			</tr>
+			<tr>
+			  <td>4</td><td>繪上小林</td><td> 4 - 5 </td><td>小原新島</td>
+			</tr>
+			<tr>
+			  <td>5</td><td>土井渡辺</td><td> 5 - 2 </td><td>田村高山</td>
+			</tr>
+		      </table>
+		    </div>
+		  </li>
+		  <li>
+		    <a href="#">
+                      法政大学 2 - 3 東京理科大学
+                      <span class="st-arrow">Open or Close</span>
+		    </a>
+		    <div class="st-content">
+                      <p>Some contenthogegeongoishdgflkjashfdksdjlghlkdjsfghnlksdjfvnhlksdjfghlaksjhvnlkasdjfghlskajdfhsakljdfhklasjdvbnklsajdfhk</p>
+		    </div>
+		  </li>
+		  <li>
+		    <a href="#">
+                      法政大学 3 - 2 芝浦工業大学
+                      <span class="st-arrow">Open or Close</span>
+		    </a>
+		    <div class="st-content">
+                      <p>Some contenthogegeongoishdgflkjashfdksdjlghlkdjsfghnlksdjfvnhlksdjfghlaksjhvnlkasdjfghlskajdfhsakljdfhklasjdvbnklsajdfhk</p>
+		    </div>
+		  </li>
+		  <li>
+		    <a href="#">
+                      法政大学 2 - 3 東京工業大学
+                      <span class="st-arrow">Open or Close</span>
+		    </a>
+		    <div class="st-content">
+                      <p>Some contenthogegeongoishdgflkjashfdksdjlghlkdjsfghnlksdjfvnhlksdjfghlaksjhvnlkasdjfghlskajdfhsakljdfhklasjdvbnklsajdfhk</p>
+		    </div>
+		  </li>
+		  <li>
+		    <a href="#">
+                      法政大学 4 - 1 東京農工大学
+                      <span class="st-arrow">Open or Close</span>
+		    </a>
+		    <div class="st-content">
+                      <p>Some contenthogegeongoishdgflkjashfdksdjlghlkdjsfghnlksdjfvnhlksdjfghlaksjhvnlkasdjfghlskajdfhsakljdfhklasjdvbnklsajdfhk</p>
+		    </div>
+		  </li>
+		</ul>
+	      </div>
 	    </div>
 	  </div>
 	  <div class="va-slice">
