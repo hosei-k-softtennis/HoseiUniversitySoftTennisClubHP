@@ -4,7 +4,9 @@
 body {
     color: #ffffff;
     background-color: #00267f;
+    /* background:#f7f7f7 url(../images/pattern.png) repeat top left; */
     background-image: url(../images/background.png);
+    
     
     background-position: center center;
     background-repeat: no-repeat;
@@ -490,9 +492,9 @@ ul.container li.button span.blue {
 }
 
 .va-slice ul li{
-    float:left;
+    /* float:left; */
     margin:0px 2px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .va-slice ul li a{
     /* color:#000; */
@@ -503,7 +505,7 @@ ul.container li.button span.blue {
     /* text-transform:uppercase; */
 }
 .va-slice ul li a:hover{
-    background:#000;
+    /* background:#000; */
     color:#fff;
     text-shadow:none;
 }
@@ -531,16 +533,16 @@ ul.container li.button span.blue {
 }
 
 /* Kwicks */
-.kwicks {
-    /* width: 125px; */
-    height: 300px;
-}
+/* .kwicks { */
+/*     /\* width: 125px; *\/ */
+/*     height: 300px; */
+/* } */
 
-.kwicks > li {
-    /* width: 125px; */
-    height: 100px;
-    margin-top: 10px;
-}
+/* .kwicks > li { */
+/*     /\* width: 125px; *\/ */
+/*     height: 100px; */
+/*     margin-top: 10px; */
+/* } */
 
 /*================================================
  
