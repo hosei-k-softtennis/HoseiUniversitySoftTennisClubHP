@@ -43,30 +43,6 @@
     <!-- liteAccordion -->
     <link rel="stylesheet" href="../common/js/liteAccordion/css/liteaccordion.css">
     <script src="../common/js/liteAccordion/js/liteaccordion.jquery.js"></script>
-    <script type="text/javascript">
-      $(function() {
-      $('#yourdiv').liteAccordion({
-      theme : 'light',
-      containerWidth  : 500,                   // fixed (px)
-      containerHeight : 250,                  // fixed (px)
-      headerWidth: 48,                        // fixed (px)
-      activateOn: 'mouseover'
-      });
-      });
-    </script>
-
-    <!-- <script type="text/javascript"> -->
-    <!-- $(function() { -->
-    <!--   $('#yourdiv1').liteAccordion({ -->
-    <!-- 	theme : 'light', -->
-    <!-- 	containerWidth  : 500,                   // fixed (px) -->
-    <!-- 	containerHeight : 250,                  // fixed (px) -->
-    <!-- 	headerWidth: 48,                        // fixed (px) -->
-    <!-- 	activateOn: 'mouseover' -->
-    <!--   }); -->
-    <!-- }); -->
-    <!-- </script> -->
-
 
     <!-- Magic Line -->
     <script src="../common/js/MagicLine/js/jquery.color-RGBa-patch.js"></script>
@@ -107,6 +83,7 @@
       <div id="va-accordion" class="va-container">
 	<div class="va-nav"> <span class="va-nav-prev">Previous</span> <span class="va-nav-next">Next</span> </div>
 	<div class="va-wrapper">
+	  
 	  <!-- <div class="va-slice"> -->
 	  <!--   <h3 class="va-title"><span class="orange">2015</span>年度<span class="blue">秋</span>季理工系大会</h3> -->
 	  <!--   <div class="va-content"> -->
@@ -118,19 +95,18 @@
           <!--     </ul> -->
 	  <!--   </div> -->
 	  <!-- </div> -->
-	  
+
 	  <div class="va-slice">
 	    <h3 class="va-title"><span class="orange">2015</span>年度<span class="blue">春</span>季理工系大会</h3>
 	    <div class="va-content">
-              <!-- <p>Keith Johnson</p> -->
-
-
-	      <div id="yourdiv">
+	      
+	      <div id="2015Spring">
 		<ol>
                   <li>
                     <h2><span>法政大学 3 - 2東京理科大学</span></h2>
                     <div>
-                      <table>
+		      <table>
+			<th></th><th>法政大学</th><th>③ - 2</th><th>東京理科大学</th>
 			<tr>
 			  <td>1</td><td>戸塚鈴木</td><td> 2 - 5 </td><td>坂本貴島</td>
 			</tr>
@@ -241,6 +217,17 @@
 		<noscript>
                   <p>Please enable JavaScript to get the full experience.</p>
 		</noscript>
+
+		<script>
+		$('#2015Spring').liteAccordion({
+		  theme : 'light',
+		  containerWidth  : 500,                  // fixed (px)
+		  containerHeight : 250,                  // fixed (px)
+		  headerWidth: 48,                        // fixed (px)
+		  activateOn: 'mouseover'
+		});
+		</script>
+
               </div>
 	    </div>
 	  </div>
@@ -248,122 +235,54 @@
 	  <div class="va-slice">
 	    <h3 class="va-title"><span class="orange">2014</span>年度<span class="blue">秋</span>季理工系大会</h3>
 	    <div class="va-content">
-	      <div id="yourdiv">
+
+	      <div id="2014Fall">
 		<ol>
                   <li>
-                    <h2><span>法政大学 3 - 2東京理科大学</span></h2>
+                    <h2><span>法政大学 2 - 3 東京理科大学</span></h2>
                     <div>
-                      <table>
-			<tr>
-			  <td>1</td><td>戸塚鈴木</td><td> 2 - 5 </td><td>坂本貴島</td>
-			</tr>
-			<tr>
-			  <td>2</td><td>中村富井</td><td> 5 - 1 </td><td>小林青島</td>
-			</tr>
-			<tr>
-			  <td>3</td><td>内田斉藤</td><td> 5 - 4 </td><td>濱崎大橋</td>
-			</tr>
-			<tr>
-			  <td>4</td><td>繪上小林</td><td> 4 - 5 </td><td>小原新島</td>
-			</tr>
-			<tr>
-			  <td>5</td><td>土井渡辺</td><td> 5 - 2 </td><td>田村高山</td>
-			</tr>
-		      </table>
+                      <p>Coming Soon</p>
                     </div>
                   </li>
                   <li>
-                    <h2><span>法政大学 4 - 1東京都市大学</span></h2>
+                    <h2><span>法政大学 3 - 2 東京都市大学</span></h2>
                     <div>
-                      <table>
-			<tr>
-			  <td>1</td><td>戸塚鈴木</td><td> 1 - 5 </td><td>茂木島田</td>
-			</tr>
-			<tr>
-			  <td>2</td><td>中村富井</td><td> 5 - 1 </td><td>黒岩大政</td>
-			</tr>
-			<tr>
-			  <td>3</td><td>内田斉藤</td><td> 5 - 4 </td><td>富澤福島</td>
-			</tr>
-			<tr>
-			  <td>4</td><td>繪上小林</td><td> 5 - 3 </td><td>中野村松</td>
-			</tr>
-			<tr>
-			  <td>5</td><td>土井渡辺</td><td> 5 - 3 </td><td>浜岡津田</td>
-			</tr>
-		      </table>
+                      <p>Coming Soon</p>
                     </div>
                   </li>
                   <li>
-                    <h2><span>法政大学4 - 1芝浦工業大学</span></h2>
+                    <h2><span>法政大学3 - 2芝浦工業大学</span></h2>
                     <div>
-                      <table>
-			<tr>
-			  <td>1</td><td>戸塚鈴木</td><td> 1 - 5 </td><td>笠井澤田</td>
-			</tr>
-			<tr>
-			  <td>2</td><td>中村富井</td><td> 5 - 4 </td><td>大貫永田</td>
-			</tr>
-			<tr>
-			  <td>3</td><td>内田斉藤</td><td> 5 - 2 </td><td>中條稲葉</td>
-			</tr>
-			<tr>
-			  <td>4</td><td>繪上小林</td><td> 5 - 3 </td><td>長谷川小川</td>
-			</tr>
-			<tr>
-			  <td>5</td><td>土井渡辺</td><td> 5 - 2 </td><td>渡部高築</td>
-			</tr>
-		      </table>
+                      <p>Coming Soon</p>
                     </div>
                   </li>
                   <li>
                     <h2><span>法政大学2 - 3東京工業大学</span></h2>
                     <div>
-                      <table>
-			<tr>
-			  <td>1</td><td>戸塚鈴木</td><td> 1 - 5 </td><td>堀切大木</td>
-			</tr>
-			<tr>
-			  <td>2</td><td>中村富井</td><td> 5 - 0 </td><td>安達早川(星)</td>
-			</tr>
-			<tr>
-			  <td>3</td><td>内田斉藤</td><td> 4 - 5 </td><td>片桐小川</td>
-			</tr>
-			<tr>
-			  <td>4</td><td>繪上小林</td><td> 3 - 5 </td><td>早川(貴)金澤</td>
-			</tr>
-			<tr>
-			  <td>5</td><td>土井渡辺</td><td> 5 - 4 </td><td>波多野原田</td>
-			</tr>
-		      </table>
+                      <p>Coming Soon</p>
                     </div>
                   </li>
                   <li>
-                    <h2><span>法政大学5 - 0東京農工大学</span></h2>
+                    <h2><span>法政大学4 - 1東京農工大学</span></h2>
                     <div>
-                      <table>
-			<tr>
-			  <td>1</td><td>戸塚鈴木</td><td> 5 - 1 </td><td>尾崎栗原</td>
-			</tr>
-			<tr>
-			  <td>2</td><td>中村富井</td><td> 5 - 0 </td><td>柚木秋山</td>
-			</tr>
-			<tr>
-			  <td>3</td><td>内田斉藤</td><td> 5 - 3 </td><td>清水伊藤</td>
-			</tr>
-			<tr>
-			  <td>4</td><td>繪上小林</td><td> 5 - 1 </td><td>関内山</td>
-			</tr>
-			<tr>
-			  <td>5</td><td>土井渡辺</td><td> 5 - 1 </td><td>日野高木</td>
-			</tr>
-		      </table>
+                      <p>Coming Soon</p>
                     </div>
                   </li>
 		</ol>
 		<noscript>
                   <p>Please enable JavaScript to get the full experience.</p>
 		</noscript>
+
+		<script>
+		$('#2014Fall').liteAccordion({
+		  theme : 'light',
+		  containerWidth  : 500,                  // fixed (px)
+		  containerHeight : 250,                  // fixed (px)
+		  headerWidth: 48,                        // fixed (px)
+		  activateOn: 'mouseover'
+		});
+		</script>
+
               </div>
 	    </div>
 	  </div>
@@ -371,154 +290,220 @@
 	  <div class="va-slice">
 	    <h3 class="va-title"><span class="orange">2014</span>年度<span class="blue">春</span>季理工系大会</h3>
 	    <div class="va-content">
-	      <!-- <p>Ben Freeman</p> -->
-
-	      <div id="yourdiv1">
+	      
+	      <div id="2014Spring">
 		<ol>
                   <li>
-                    <h2><span>法政大学 3 - 2東京理科大学</span></h2>
+                    <h2><span>法政大学2 - 3東京理科大学</span></h2>
                     <div>
-                      <table>
-			<tr>
-			  <td>1</td><td>戸塚鈴木</td><td> 2 - 5 </td><td>坂本貴島</td>
-			</tr>
-			<tr>
-			  <td>2</td><td>中村富井</td><td> 5 - 1 </td><td>小林青島</td>
-			</tr>
-			<tr>
-			  <td>3</td><td>内田斉藤</td><td> 5 - 4 </td><td>濱崎大橋</td>
-			</tr>
-			<tr>
-			  <td>4</td><td>繪上小林</td><td> 4 - 5 </td><td>小原新島</td>
-			</tr>
-			<tr>
-			  <td>5</td><td>土井渡辺</td><td> 5 - 2 </td><td>田村高山</td>
-			</tr>
-		      </table>
+                      <p>Coming Soon</p>
                     </div>
                   </li>
                   <li>
-                    <h2><span>法政大学 4 - 1東京都市大学</span></h2>
+                    <h2><span>法政大学1 - 4東京都市大学</span></h2>
                     <div>
-                      <table>
-			<tr>
-			  <td>1</td><td>戸塚鈴木</td><td> 1 - 5 </td><td>茂木島田</td>
-			</tr>
-			<tr>
-			  <td>2</td><td>中村富井</td><td> 5 - 1 </td><td>黒岩大政</td>
-			</tr>
-			<tr>
-			  <td>3</td><td>内田斉藤</td><td> 5 - 4 </td><td>富澤福島</td>
-			</tr>
-			<tr>
-			  <td>4</td><td>繪上小林</td><td> 5 - 3 </td><td>中野村松</td>
-			</tr>
-			<tr>
-			  <td>5</td><td>土井渡辺</td><td> 5 - 3 </td><td>浜岡津田</td>
-			</tr>
-		      </table>
+                      <p>Coming Soon</p>
                     </div>
                   </li>
                   <li>
-                    <h2><span>法政大学4 - 1芝浦工業大学</span></h2>
+                    <h2><span>法政大学2 - ③芝浦工業大学</span></h2>
                     <div>
-                      <table>
-			<tr>
-			  <td>1</td><td>戸塚鈴木</td><td> 1 - 5 </td><td>笠井澤田</td>
-			</tr>
-			<tr>
-			  <td>2</td><td>中村富井</td><td> 5 - 4 </td><td>大貫永田</td>
-			</tr>
-			<tr>
-			  <td>3</td><td>内田斉藤</td><td> 5 - 2 </td><td>中條稲葉</td>
-			</tr>
-			<tr>
-			  <td>4</td><td>繪上小林</td><td> 5 - 3 </td><td>長谷川小川</td>
-			</tr>
-			<tr>
-			  <td>5</td><td>土井渡辺</td><td> 5 - 2 </td><td>渡部高築</td>
-			</tr>
-		      </table>
+                      <p>Coming Soon</p>
                     </div>
                   </li>
                   <li>
                     <h2><span>法政大学2 - 3東京工業大学</span></h2>
                     <div>
-                      <table>
-			<tr>
-			  <td>1</td><td>戸塚鈴木</td><td> 1 - 5 </td><td>堀切大木</td>
-			</tr>
-			<tr>
-			  <td>2</td><td>中村富井</td><td> 5 - 0 </td><td>安達早川(星)</td>
-			</tr>
-			<tr>
-			  <td>3</td><td>内田斉藤</td><td> 4 - 5 </td><td>片桐小川</td>
-			</tr>
-			<tr>
-			  <td>4</td><td>繪上小林</td><td> 3 - 5 </td><td>早川(貴)金澤</td>
-			</tr>
-			<tr>
-			  <td>5</td><td>土井渡辺</td><td> 5 - 4 </td><td>波多野原田</td>
-			</tr>
-		      </table>
+                      <p>Coming Soon</p>
                     </div>
                   </li>
                   <li>
-                    <h2><span>法政大学5 - 0東京農工大学</span></h2>
+                    <h2><span>法政大学4 - 1東京農工大学</span></h2>
                     <div>
-                      <table>
-			<tr>
-			  <td>1</td><td>戸塚鈴木</td><td> 5 - 1 </td><td>尾崎栗原</td>
-			</tr>
-			<tr>
-			  <td>2</td><td>中村富井</td><td> 5 - 0 </td><td>柚木秋山</td>
-			</tr>
-			<tr>
-			  <td>3</td><td>内田斉藤</td><td> 5 - 3 </td><td>清水伊藤</td>
-			</tr>
-			<tr>
-			  <td>4</td><td>繪上小林</td><td> 5 - 1 </td><td>関内山</td>
-			</tr>
-			<tr>
-			  <td>5</td><td>土井渡辺</td><td> 5 - 1 </td><td>日野高木</td>
-			</tr>
-		      </table>
+                      <p>Coming Soon</p>
                     </div>
                   </li>
 		</ol>
 		<noscript>
                   <p>Please enable JavaScript to get the full experience.</p>
 		</noscript>
-              </div>
 
+		<script>
+		$('#2014Spring').liteAccordion({
+		  theme : 'light',
+		  containerWidth  : 500,                  // fixed (px)
+		  containerHeight : 250,                  // fixed (px)
+		  headerWidth: 48,                        // fixed (px)
+		  activateOn: 'mouseover'
+		});
+		</script>
+              </div>
 	    </div>
 	  </div>
+	  
 	  <div class="va-slice">
 	    <h3 class="va-title"><span class="orange">2013</span>年度<span class="blue">秋</span>季理工系大会</h3>
 	    <div class="va-content">
-              <p>Alex Schuman</p>
-              <ul>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Portfolio</a></li>
-		<li><a href="#">Contact</a></li>
-              </ul>
+
+	      <div id="2013Fall">
+		<ol>
+                  <li>
+                    <h2><span>法政大学3 - 2東京理科大学</span></h2>
+                    <div>
+                      <p>Coming Soon</p>
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学2 - 3東京都市大学</span></h2>
+                    <div>
+                      <p>Coming Soon</p>
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学3 - 2芝浦工業大学</span></h2>
+                    <div>
+                      <p>Coming Soon</p>
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学3 - 2東京工業大学</span></h2>
+                    <div>
+		      <p>Coming Soon</p>
+		    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学4 - 1日本大学(理工)</span></h2>
+                    <div>
+                      <p>Coming Soon</p>
+                    </div>
+                  </li>
+		</ol>
+		<noscript>
+                  <p>Please enable JavaScript to get the full experience.</p>
+		</noscript>
+
+		<script>
+		$('#2013Fall').liteAccordion({
+		  theme : 'light',
+		  containerWidth  : 500,                  // fixed (px)
+		  containerHeight : 250,                  // fixed (px)
+		  headerWidth: 48,                        // fixed (px)
+		  activateOn: 'mouseover'
+		});
+		</script>
+
+              </div>
 	    </div>
 	  </div>
+	  
 	  <div class="va-slice">
 	    <h3 class="va-title"><span class="orange">2013</span>年度<span class="blue">春</span>季理工系大会</h3>
 	    <div class="va-content">
-              <p>Maria Wales</p>
-              <ul>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Portfolio</a></li>
-		<li><a href="#">Contact</a></li>
-              </ul>
+
+	      <div id="2013Spring">
+		<ol>
+                  <li>
+                    <h2><span>法政大学 3 - 2東京理科大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学 4 - 1東京都市大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学4 - 1芝浦工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学2 - 3東京工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学5 - 0東京農工大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+		</ol>
+		<noscript>
+                  <p>Please enable JavaScript to get the full experience.</p>
+		</noscript>
+
+		<script>
+		$('#2013Spring').liteAccordion({
+		  theme : 'light',
+		  containerWidth  : 500,                  // fixed (px)
+		  containerHeight : 250,                  // fixed (px)
+		  headerWidth: 48,                        // fixed (px)
+		  activateOn: 'mouseover'
+		});
+		</script>
+
+              </div>
 	    </div>
 	  </div>
+	  
 	  <div class="va-slice">
 	    <h3 class="va-title"><span class="orange">2012</span>年度<span class="blue">秋</span>季理工系大会</h3>
 	    <div class="va-content">
-              <p>Paul White</p>
+	      <div id="2012Fall">
+		<ol>
+                  <li>
+                    <h2><span>法政大学 3 - 2東京理科大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学 4 - 1東京都市大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学4 - 1芝浦工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学2 - 3東京工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学5 - 0東京農工大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+		</ol>
+		<noscript>
+                  <p>Please enable JavaScript to get the full experience.</p>
+		</noscript>
+
+		<script>
+		$('#2012Fall').liteAccordion({
+		  theme : 'light',
+		  containerWidth  : 500,                  // fixed (px)
+		  containerHeight : 250,                  // fixed (px)
+		  headerWidth: 48,                        // fixed (px)
+		  activateOn: 'mouseover'
+		});
+		</script>
+
+              </div>
+	      
+	      <p>Paul White</p>
               <ul>
 		<li><a href="#">About</a></li>
 		<li><a href="#">Portfolio</a></li>
@@ -526,34 +511,277 @@
               </ul>
 	    </div>
 	  </div>
+	  
 	  <div class="va-slice">
 	    <h3 class="va-title"><span class="orange">2012</span>年度<span class="blue">春</span>季理工系大会</h3>
 	    <div class="va-content">
-	      <p>hoge</p>
+	      <div id="2012Spring">
+		<ol>
+                  <li>
+                    <h2><span>法政大学 3 - 2東京理科大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学 4 - 1東京都市大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学4 - 1芝浦工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学2 - 3東京工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学5 - 0東京農工大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+		</ol>
+		<noscript>
+                  <p>Please enable JavaScript to get the full experience.</p>
+		</noscript>
+
+		<script>
+		$('#2012Spring').liteAccordion({
+		  theme : 'light',
+		  containerWidth  : 500,                  // fixed (px)
+		  containerHeight : 250,                  // fixed (px)
+		  headerWidth: 48,                        // fixed (px)
+		  activateOn: 'mouseover'
+		});
+		</script>
+
+              </div>
 	    </div>
 	  </div>
+	  
 	  <div class="va-slice">
 	    <h3 class="va-title"><span class="orange">2011</span>年度<span class="blue">秋</span>季理工系大会</h3>
 	    <div class="va-content">
-	      <p>hoge</p>
+	      <div id="2011Fall">
+		<ol>
+                  <li>
+                    <h2><span>法政大学 3 - 2東京理科大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学 4 - 1東京都市大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学4 - 1芝浦工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学2 - 3東京工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学5 - 0東京農工大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+		</ol>
+		<noscript>
+                  <p>Please enable JavaScript to get the full experience.</p>
+		</noscript>
+
+		<script>
+		$('#2011Fall').liteAccordion({
+		  theme : 'light',
+		  containerWidth  : 500,                  // fixed (px)
+		  containerHeight : 250,                  // fixed (px)
+		  headerWidth: 48,                        // fixed (px)
+		  activateOn: 'mouseover'
+		});
+		</script>
+
+              </div>
+	      
 	    </div>
 	  </div>
+	  
 	  <div class="va-slice">
 	    <h3 class="va-title"><span class="orange">2011</span>年度<span class="blue">春</span>季理工系大会</h3>
 	    <div class="va-content">
-	      <p>hoge</p>
+	      <div id="2011Spring">
+		<ol>
+                  <li>
+                    <h2><span>法政大学 3 - 2東京理科大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学 4 - 1東京都市大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学4 - 1芝浦工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学2 - 3東京工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学5 - 0東京農工大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+		</ol>
+		<noscript>
+                  <p>Please enable JavaScript to get the full experience.</p>
+		</noscript>
+
+		<script>
+		$('#2011Spring').liteAccordion({
+		  theme : 'light',
+		  containerWidth  : 500,                  // fixed (px)
+		  containerHeight : 250,                  // fixed (px)
+		  headerWidth: 48,                        // fixed (px)
+		  activateOn: 'mouseover'
+		});
+		</script>
+
+              </div>
+	      
 	    </div>
 	  </div>
 	  <div class="va-slice">
 	    <h3 class="va-title"><span class="orange">2010</span>年度<span class="blue">秋</span>季理工系大会</h3>
 	    <div class="va-content">
-	      <p>hoge</p>
+	      <div id="2010Fall">
+		<ol>
+                  <li>
+                    <h2><span>法政大学 3 - 2東京理科大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学 4 - 1東京都市大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学4 - 1芝浦工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学2 - 3東京工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学5 - 0東京農工大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+		</ol>
+		<noscript>
+                  <p>Please enable JavaScript to get the full experience.</p>
+		</noscript>
+
+		<script>
+		$('#2010Fall').liteAccordion({
+		  theme : 'light',
+		  containerWidth  : 500,                  // fixed (px)
+		  containerHeight : 250,                  // fixed (px)
+		  headerWidth: 48,                        // fixed (px)
+		  activateOn: 'mouseover'
+		});
+		</script>
+
+              </div>
+	      
 	    </div>
 	  </div>
 	  <div class="va-slice">
 	    <h3 class="va-title"><span class="orange">2010</span>年度<span class="blue">春</span>季理工系大会</h3>
 	    <div class="va-content">
-	      <p>hoge</p>
+
+	      <div id="2010Spring">
+		<ol>
+                  <li>
+                    <h2><span>法政大学 3 - 2東京理科大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学 4 - 1東京都市大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学4 - 1芝浦工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学2 - 3東京工業大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <h2><span>法政大学5 - 0東京農工大学</span></h2>
+                    <div>
+                      
+                    </div>
+                  </li>
+		</ol>
+		<noscript>
+                  <p>Please enable JavaScript to get the full experience.</p>
+		</noscript>
+
+		<script>
+		$('#2010Spring').liteAccordion({
+		  theme : 'light',
+		  containerWidth  : 500,                  // fixed (px)
+		  containerHeight : 250,                  // fixed (px)
+		  headerWidth: 48,                        // fixed (px)
+		  activateOn: 'mouseover'
+		});
+		</script>
+
+              </div>
+
 	    </div>
 	  </div>
 	</div>
@@ -563,18 +791,8 @@
       <footer id="pageFoot">
 	<p id="copyright"><small>Copyright&copy; Hosei University Soft Tennis Club in Koganei All Right Reserved.</small></p>
       </footer>
-      
-    </div>
 
-    <!-- <script type="text/javascript"> -->
-    <!-- $('#yourdiv').liteAccordion({ -->
-    <!--   theme : 'light', -->
-    <!--   containerWidth  : 500,                   // fixed (px) -->
-    <!--   containerHeight : 250,                  // fixed (px) -->
-    <!--   headerWidth: 48,                        // fixed (px) -->
-    <!--   activateOn: 'mouseover' -->
-    <!-- }); -->
-    <!-- </script> -->
+    </div>
 
   </body>
 
