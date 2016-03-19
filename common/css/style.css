@@ -548,6 +548,8 @@ ul.container li.button span.blue {
 
 .va-content table {
     margin: 0 auto;
+    margin-top: 30px;
+    
 }
 
 .va-content th {
