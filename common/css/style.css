@@ -23,6 +23,8 @@ a {
     text-decoration: none;
 }
 
+
+
 .normalLink  {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
@@ -33,15 +35,13 @@ a {
 }
 
 
+
 p {
     font-size: 16px;
     line-height: 1.375;
 }
 
-/* a:hover { */
 
-/*     color: #c0c0c0; */
-/* } */
 
 #page {
     width: 980px;
@@ -64,6 +64,11 @@ p {
 
 .pageTitleText {
     margin-bottom: 30px;
+}
+
+.pageTitleText ol li {
+    font-size: 16px;
+    line-height: 1.375;
 }
 
 /* ページヘッダー */
