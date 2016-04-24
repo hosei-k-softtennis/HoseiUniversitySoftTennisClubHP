@@ -1,0 +1,130 @@
+<!DOCTYPE html >
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="A.Akira" />
+        <meta name="keywords" content="法政大学,ソフトテニス,軟式テニス,軟式,Hosei,University,Soft,Tennis,六大学,MARCH,理工,関東理工系,理工系,春,秋,小金井,法政理工,法政大学　ソフトテニス部" />
+        <meta name="description" content="法政大学 工体連 ソフトテニス部のホームページです。　春と秋の理工系大会で1部リーグ優勝を目指して活動しています。" />
+        <title>法政大学工体連ソフトテニス部</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+
+        <link rel="stylesheet" href="./css/style.css" type="text/css" media="all"/> 
+        
+        <!-- navigation -->
+        <script src="./js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/navigation/animated-menu.js" type="text/javascript" charset="utf-8"></script>
+    
+        <!-- parallax -->
+        <script src="./js/parallax/jquery.scrolly.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.parallax').scrolly({bgParallax: true});
+            });
+        </script>
+        <script>
+            $(function() {
+				var top = $('#get_default_position_dummy').offset().top; //y座標の初期値を取得
+				$(window).scroll(function() {
+				var value = $(this).scrollTop(); //スクロール値を取得
+				$('#scrollValue').text(value);
+				//取得したスクロール値を四角形のY座標値に指定
+				//スクロール値を除算して移動距離に変化を付ける
+				$('#google_map').css('top', top + value / 4);
+				$('#google_map2').css('top', top + value / 6);
+				});
+            });
+        </script>
+        <!-- ogp tag -->
+        <meta property="og:title" content="部活紹介" />
+        <meta property="og:description" content="法政大学 工体連 ソフトテニス部のホームページです。春と秋の理工系大会で1部リーグ優勝を目指して活動しています。" />
+        <meta property="og:url" content="http://hoseisofttennis.web.fc2.com" />
+        <meta property="og:image" content="http://hoseisofttennis.web.fc2.com/images/ogp_icon.jpg" />
+        <meta property="og:site_name" content="法政大学工体連ソフトテニス部" />
+        <meta property="og:locale" content="ja_JP" />
+	</head>
+
+	<body>
+    	<div id="wrapper">
+            <header>
+            	<a href="index.html"><img src="./images/logo.png" class="logo" alt="法政大学工体連ソフトテニス部" /></a>
+                <nav>
+                    <ul>
+                        <li class="nav about">
+                            <p><a href="about.html">About</a></p>
+                            <p class="subtext">部活紹介</p>
+                        </li>
+                        <li class="nav member">
+                            <p><a href="member.html">Member</a></p>
+                            <p class="subtext">部員</p>
+                        </li>
+                        <li class="nav result">
+                            <p><a href="result.html">Result</a></p>
+                            <p class="subtext">大会結果</p>
+                        </li>
+                        <li class="nav photo">
+                            <p><a href="photo.html">Photo</a></p>
+                            <p class="subtext">写真</p>
+                        </li>
+                        <li class="nav schedule">
+                            <p><a href="schedule.html">Schedule</a></p>
+                            <p class="subtext">予定</p>
+                        </li>
+                        <li class="nav contact">
+                            <p><a href="contact.html">Contact</a></p>
+                            <p class="subtext">連絡先</p>
+                        </li>
+                    </ul>
+                </nav>
+			</header>
+    	</div>
+        <!-- wrapper ends here -->
+        
+    	<div id="parallax_effect_page">
+    
+            <section id="active">
+                <article class="about1">
+                <h1>活動内容</h1>   
+                <p>私達ソフトテニス部は、年に2度ある関東理工系リーグの大会での優勝を目指して主に活動しています。<br />
+                        成績は2009年度春に男子1部リーグで優勝、2010年度～2011年度を通して男子1部リーグで3連覇を果たしました。今年の目標は、みんなで力を合わせもう一度、1部リーグで優勝することです。<br />
+                        現在の部員は29名、初心者からインハイ出場者まで幅広い実力のメンバーがいます。<br />
+                        <br />
+                        活動は基本週に1回土曜日に練習をしています。<br />
+                        ですが、平日でも授業が早く終わった日などはみんなで集まって練習したりもします。<br />
+                        基本的にみんなで<strong class="kyotyo">楽しく</strong>活動しているので、バイトや勉強との両立は簡単です。<br />
+                        もし「楽しそうだ!!」「興味がある!!」と少しでも思ったならば気軽に先輩の話を聞きに来たり、練習を見学しに来てください。<br /></p>    
+                </article>
+                <div class="parallax" data-velocity="-.3"></div>
+                <div id="get_default_position_dummy"></div>
+            </section>
+            <section id="place">
+                <article class="about2">
+                    <h1>活動場所</h1>   
+                    <p>　普段の活動場所は小金井キャンパスから徒歩５分程度の所にある法政大学所有の緑町グラウンド内にあるコートを利用しています。（大学施設マイクロ・ナノテクノロジー研究センター横）<br />
+                        大学が所有しているコートなので利用料は一切かかりません。
+                        日曜日、祝日以外は基本的に利用可能なので自分の好きな時間にコートを利用することができます。<br />
+                        　また、部活動優先でコートを使用できるため予約さえすれば 必ずコートを使用できます。<br />
+                        大学敷地内にある部室棟裏のコートは体育館横の事務室を通して予約する事で使用出来ます。<br />
+                        ただし、部活優先のコートではないので他の人が予約していると使用することが出来ませんので気をつけて下さい。<br /><br />
+                        学校からはそんなに遠くはないので迷うことはないと思います。
+                        校門を出て右に行き一平ソバの辺りを左に曲がり若干坂になっている道を上り真っ直ぐ進めばコートに着きます。（図中B
+                        地点）<br />
+                        衛星写真だとコートが写ってないですが、現在はオムニコートが２面あります。<br />
+                    </p>
+                </article>
+                <div class="parallax" data-velocity="-.1"></div>
+                
+                <div id="google_map">
+                    <iframe class="parallax-item" width="700" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="howtogo" src="http://maps.google.co.jp/maps?f=d&amp;source=s_d&amp;saddr=%E9%83%BD%E9%81%93247%E5%8F%B7%E7%B7%9A&amp;daddr=%E6%8C%87%E5%AE%9A%E3%81%AE%E5%9C%B0%E7%82%B9&amp;hl=ja&amp;geocode=FQnjIAIdr-5QCA%3BFY3oIAIdstNQCA&amp;mra=ltm&amp;dirflg=w&amp;sll=35.709618,139.519522&amp;sspn=0.007013,0.014709&amp;brcurrent=3,0x6018e5924ed2c805:0x65a496d149053dfd,0&amp;ie=UTF8&amp;ll=35.709932,139.519715&amp;spn=0.008363,0.013733&amp;z=14&amp;output=embed">
+                    </iframe>
+                </div>
+            </section>
+		</div>
+		<!-- parallax effect page ends here -->
+                    
+        <!-- [FC2 Analyzer] http://analyzer.fc2.com/  -->
+        <script type="text/javascript" src="http://analyzer54.fc2.com/ana/processor.php?uid=1375368"></script>
+        <noscript><div style="text-align:right;"><img src="http://analyzer54.fc2.com/ana/icon.php?uid=1375368&amp;ref=&amp;href=&amp;wid=0&amp;hei=0&amp;col=0" alt="fc2" /></div></noscript>
+        <!-- [FC2 Analyzer]  -->	
+	</body>
+</html>
