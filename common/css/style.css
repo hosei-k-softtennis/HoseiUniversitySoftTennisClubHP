@@ -304,7 +304,8 @@ p {
     float: right;
 }
 .bxslider ul {
-    margin: 0;
+    margin-top: 0;
+    margin: 0 0;
     padding: 0;
     list-style-type: none;
 }
