@@ -570,6 +570,96 @@ ul.container li.button span.blue {
 
 /*================================================
  
+ photo
+
+==================================================*/
+.grid {
+    width: 970px;
+}
+
+.grid ul li {
+    list-style: none;
+    font-size: 25px;
+}
+
+.grid ul li .photoOrange {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #ff710a;
+}
+
+.grid ul li ul {
+    margin: 20px 0;
+    
+}
+
+.grid ul li ul li {
+    width: 170px;
+    height: 170px;
+    
+    margin: 5px;
+    padding: 10px 10px;
+    
+    float: left;
+    list-style: none;
+    
+    background: rgba(0, 255, 0, 0.2);
+    
+    /* width:100%; */
+    position: relative;
+}
+
+.grid ul li ul li .description {
+    opacity: 0;
+
+    margin-top: 20px;
+    
+    font-size: 15px;
+
+    width: 90%;
+}
+
+.grid ul li ul li:hover {
+    background: rgba(0, 255, 0, 0.5);
+}
+
+.grid ul li ul li .description:hover {
+    opacity: 1;
+}
+
+.grid ul li ul li a {
+    /* color: #ff710a; */
+    color: white;
+    padding: 10px 10px;
+    text-shadow: 0px 0px 10px white;
+
+    display: block;
+    /* top: 0; */
+    /* left: 0; */
+    height:100%;
+    width: 100%;
+}
+
+.grid ul li ul:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+.grid:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+
+/*================================================
+ 
  schedule
 
 ==================================================*/
