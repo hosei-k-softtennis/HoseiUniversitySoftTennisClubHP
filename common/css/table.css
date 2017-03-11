@@ -2,17 +2,13 @@
    selfIntro Table
 -------------------------------------------------- */
 
-.member-table {
-    margin: 0 auto;
-    width: 900px;
-}
-
-.member-table table {
-    background: rgba(0, 255, 0, 0.2);
-}
+/* .member-table { */
+/*     margin: 0 auto; */
+/*     width: 900px; */
+/* } */
 
 .member-table-row {
-    margin: 20px 0;
+
 }
 
 .member-table-row:after {
@@ -22,9 +18,16 @@
     visibility:hidden;
 }
 
+.member-table table td:nth-child(even) {
+    width: 250px;
+    background: rgba(0, 255, 0, 0.2);
+    
+}
+
 .member-table table {
+    margin: 10px auto;
     text-align: center;
-    display: inline-block;
+    background: rgba(0, 255, 0, 0.2);
 }
 
 .member-table:after {
@@ -32,12 +35,12 @@
 }
 
 .table-left {
-    width: 400px;
+    width: 50%;
     float: left;
 }
 
 .table-right {
-    width: 400px;
+    width: 50%;
     float: right;
 }
 
