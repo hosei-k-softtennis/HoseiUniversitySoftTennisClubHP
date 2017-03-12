@@ -30,6 +30,10 @@
     background: rgba(0, 255, 0, 0.2);
 }
 
+.member-table tbody {
+    border-left: solid 5px #ffa500;
+}
+
 .member-table:after {
     
 }
