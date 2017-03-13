@@ -687,6 +687,41 @@ ul.container li.button span.blue {
  contact
 
 ==================================================*/
+.twitter-account {
+    width: 70%;
+    margin: 0 auto;
+    border: 5px white solid;
+    background-color: white;
+    color: black;
+}
+
+.twitter-contents {
+    border: 1px #666666 solid;
+    padding: 20px 25px;
+}
+
+.twitter-account-user-name {
+    font-size: 25px;
+}
+
+.twitter-account-name a {
+    /* color: #666666; */
+    /* font-weight: bold; */
+}
+
+.twitter-account-backgroung-img {
+    width: 100%;
+}
+
+.twitter-profile-img {
+    margin: 10px 10px;
+    border: 2px white solid;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
 .mailAddress {
     margin-left: 30px;
 }
