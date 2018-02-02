@@ -1,0 +1,8 @@
+admin:
+  username: admin
+  name: Hosei Univ. Soft Tennis Club
+  location: 小金井市緑町
+  url_full: http://hosei-k-softtennis.github.io/HoseiUniversitySoftTennisClubHP/
+  url: hosei-k-softtennis.github.io/HoseiUniversitySoftTennisClubHP
+  bio: 法政大学工体連ソフトテニス部のホームページです。<br>春と秋の理工系大会で1部リーグ優勝を目指して活動しています。
+  assets: assets/images/admin_icon.jpg

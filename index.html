@@ -1,109 +1,37 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Shunsuke Kitada"/>
-    <meta name="keywords" content="法政大学,ソフトテニス,軟式テニス,軟式,Hosei,University,Soft,Tennis,六大学,MARCH,理工,関東理工系,理工系,春,秋,小金井,法政理工,法政大学　ソフトテニス部" />
-    <meta name="description" content="法政大学 工体連 ソフトテニス部のホームページです。　春と秋の理工系大会で1部リーグ優勝を目指して活動しています。" />
+---
+layout: default
+title: Home / 法政大学工体連ソフトテニス部
+cover: 'assets/images/background.png'
+class: 'home-template'
+navigation: True
+logo: 'assets/images/hosei_logo_white.png'
+current: home
+---
+<!-- < default -->
+<!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-    <title>Home / 法政大学工体連ソフトテニス部</title>
-
-    <!-- HP全体のCSS -->
-    <link rel="stylesheet" href="common/css/normalize.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="common/css/style.css" type="text/css" media="all" />
-    <link rel="shortcut icon" href="common/images/favicon.ico" type="image/x-ico" />
-    <!-- <link rel="stylesheet" href="common/js/MagicLine/css/style.css" type="text/css" media="all" /> -->
-
-    <!-- jQuery -->
-    <script src="common/js/jquery-1.10.1.min.js"></script>
-
-    <!-- bxSlider -->
-    <script src="common/js/jquery.bxslider/jquery.bxslider.js"></script>
-    <link rel="stylesheet" href="common/js/jquery.bxslider/jquery.bxslider.css" />
-    <script>
-    $(document).ready(function(){
-      $('.bxslider').bxSlider({
-	auto: true,
-	speed: 1000,
-	pause: 4000
-      });
-    });
-    </script>
-
-    <!-- MagicLine -->
-    <script src="common/js/MagicLine/js/jquery.color-RGBa-patch.js"></script>
-    <script src="common/js/MagicLine/js/example.js"></script>
-
-    <!-- ogq tag -->
-
-  </head>
-
-  <body>
-    <div id="page">
-      <header id="pageHead">
-
-	<nav class="globalNavi">
-	  <div class="nav-wrap">
-	    <ul class="group" id="example-one">
-	      <div class="link">
-		<li class="current_page_item"><a href="index.html">Home<br><small>ホーム</small></a></li>
-		<li><a href="./topics/index.html">Topics<br><small>最新情報</small></a></li>
-		<li><a href="./about/index.html">About<br><small>部活紹介</small></a></li>
-		<li><a href="./member/index.html">Member<br><small>部員紹介</small></a></li>
-		<li><a href="./result/index.html">Result<br><small>大会結果</small></a></li>
-		<li><a href="./photo/index.html">Photo<br><small>部活写真</small></a></li>
-		<li><a href="./schedule/index.html">Schedule<br><small>部活予定</small></a></li>
-		<li><a href="./contact/index.html">Contact<br><small>連絡先</small></a></li>
-	      </div>
-	    </ul>
-	  </div>
-	</nav>
-      </header>
-
-      <div id="pageBody">
-	<div class="two-column">
-	  <div class="homeTitle">
-	    <h2 class="hoseiUniversity">Hosei<br>University</h2>
-
-	    <h1 class="clubName">法政大学工体連ソフトテニス部</h1>
-
-	    <h2 class="softTennisClub">Soft Tennis Club</h2>
-
-	    <div class="text">
-	      <h3 class="wanted">Team members are now wanted!</h3>
-	      <p class="wantedText">If you are interested in our soft tennis club, regardless of experience or beginner, please come to our tennis court!</p>
-	    </div>
-
-	  </div>
-
-	  <div class="imageSlide">
-	    <ul class="bxslider" style="margin-top: 0;">
-	      <li><img src="common/images/top/01.png" width="500" height="400" alt="" /></li>
-	      <li><img src="common/images/top/02.png" width="500" height="400" alt="" /></li>
-	      <li><img src="common/images/top/03.png" width="500" height="400" alt="" /></li>
-	    </ul>
-	  </div>
-	</div>
-	
-	<div class="topics">
-	  <h2><span class="orange">W</span>hat's New?</h2>
-	  <ul class="topicsList">
-	    <li><a href="topics/index.html#topics7">【当部活OBさまへ】50周年記念思い出話の寄稿様式について</a></li>
-	    <li><a href="topics/index.html#topics6">2015年度 新入生の方へ</a></li>
-	    <li><a href="topics/index.html#topics5">法政大学の広報にて紹介されました</a></li>
-	    <li><a href="topics/index.html#topics4">新入生の方へ(2014/03/08)</a></li>
-	    <li><a href="topics/index.html#topics3">ホームページをリニューアルしました</a></li>
-	    <li><a href="topics/index.html#topics2">入部希望者の方へ</a></li>
-	    <li><a href="topics/index.html#topics1">V3達成！！</a></li>
-	  </ul>
-	</div>
-      </div>
-
-      <footer id="pageFoot">
-	<p id="copyright"><small>Copyright&copy; Hosei University Soft Tennis Club in Koganei All Right Reserved.</small></p>
-      </footer>
-
+<!-- The big featured header  -->
+<header class="main-header {% if page.cover %}"
+        style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
+    <nav class="main-nav overlay clearfix">
+        {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
+        {% if page.navigation %}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {% endif %}
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{ site.name }}</h1>
+            <h2 class="page-description">{{ site.description }}</h2>
+        </div>
     </div>
-  </body>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
 
-</html>
+<!-- The main content area on the homepage -->
+<main id="content" class="content" role="main">
+
+    <!-- The tag below includes the post loop - partials/loop.hbs -->
+    {% include loop.html %}
+
+</main>

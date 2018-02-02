@@ -1,0 +1,16 @@
+<div class="nav">
+  <h3 class="nav-title">Menu</h3>
+  <a href="#" class="nav-close">
+    <span class="hidden">Close</span>
+  </a>
+  <ul>
+    <li class="nav-home {% if page.current == 'home' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}">Home</a></li>
+    <li class="nav-author {% if page.url contains 'admin' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}author/admin">What's new</a></li>
+    <li class="nav-about {% if page.current == 'about' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}about">About</a></li>
+    <li class="nav-member {% if page.current == 'member' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}member">Member</a></li>
+    <li class="nav-result {% if page.current == 'result' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}result">Result</a></li>
+    <li class="nav-contact {% if page.current == 'contact' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}contact">Contact</a></li>
+    <li class="nav-access {% if page.current == 'contact' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}access">Access</a></li>
+  </ul>
+</div>
+<span class="nav-cover"></span>
