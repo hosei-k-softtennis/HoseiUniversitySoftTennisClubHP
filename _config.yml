@@ -16,7 +16,7 @@ baseurl: /HoseiUniversitySoftTennisClubHP/
 
 # Permalinks
 permalink: /:title
-permalink: /author/:username
+permalink: /author/admin
 # permalink: /tag/:tag
 
 # gems and other configs
