@@ -23,6 +23,6 @@ current: about
 学校からは遠くはないので迷うことはないと思います。 校門を出て右に行き、「一平ソバ」の辺りを左に曲がり、若干坂になっている道を上り、真っ直ぐ進めばコートに着きます。こちらの地図を参考にしてください。 オムニコートが２面を使って練習を行っております。
 
 <center>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349.93076952671487!2d139.51537699999997!3d35.710170000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQyJzM2LjYiTiAxMznCsDMwJzU1LjQiRQ!5e1!3m2!1sja!2sjp!4v1427535469926" width="400" height="300" frameborder="0" style="border:0">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349.93076952671487!2d139.51537699999997!3d35.710170000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQyJzM2LjYiTiAxMznCsDMwJzU1LjQiRQ!5e1!3m2!1sja!2sjp!4v1427535469926" width="100%" height="100%" frameborder="0" style="border:0">
 </iframe>
 </center>

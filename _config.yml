@@ -7,7 +7,7 @@ paginate: 5
 language: 'jp'
 
 # Website info
-name: 'Hosei Univ. Soft Tennis Club<br><span>法政大学工体連ソフトテニス部</span>'
+name: '法政大学工体連ソフトテニス部'
 description: "If you are interested in our soft tennis club, regardless of experience or beginner, please come to our tennis court!"
 
 short_url: 'hosei-k-softtennis.github.io/HoseiUniversitySoftTennisClubHP/'

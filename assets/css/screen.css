@@ -964,8 +964,12 @@ body.nav-opened .nav {
     color: #fff;
 }
 
-.page-title span {
+.page-title span.orange {
     color: #ffa500;
+}
+
+.page-title span.text {
+    display: inline-block;
 }
 
 .page-description {
