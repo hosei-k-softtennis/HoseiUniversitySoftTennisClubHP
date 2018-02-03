@@ -16,7 +16,7 @@ baseurl: /HoseiUniversitySoftTennisClubHP/
 
 # Permalinks
 permalink: /:title
-permalink: /author/
+# permalink: /author/:username
 # permalink: /tag/:tag
 
 # gems and other configs
@@ -44,13 +44,13 @@ exclude: [vendor]
 # or "master" otherwise
 safe: false
 lsi: false
-username: myjekyll
-repo: jasper
+username: hosei-k-softtennis
+repo: https://github.com/hosei-k-softtennis/HoseiUniversitySoftTennisClubHP
 branch: master
 relative_source: ../jasper/
 destination: ../jasper-pages/
-production_url:  https://myjekyll.github.io/jasper/
-source_url:  https://github.com/myjekyll/jasper/
+production_url: http://hosei-k-softtennis.github.io/HoseiUniversitySoftTennisClubHP/author/
+source_url: https://github.com/hosei-k-softtennis/HoseiUniversitySoftTennisClubHP
 
 exclude:
   - README.md
