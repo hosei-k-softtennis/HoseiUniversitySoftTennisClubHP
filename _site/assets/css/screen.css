@@ -29,9 +29,13 @@
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
 }
-body { margin: 0; }
+body {
+    margin: 0;
+    /* background-color: #00267f; */
+
+}
 article, aside, details,
 figcaption, figure,
 footer, header,
@@ -184,7 +188,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    /* font-family: "Merriweather", serif; */
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -585,7 +589,8 @@ body.nav-opened .site-wrapper {
     height: 100vh;
     margin-bottom: 5rem;
     text-align: center;
-    background: #222 no-repeat center center;
+    /* background: #222 no-repeat center center; */
+    background: #00267f no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -623,7 +628,10 @@ body.nav-opened .nav-cover {
     z-index: 5;
     width: 240px;
     opacity: 0;
-    background: #111;
+    /* background: #111; */
+    background: #ffa500;
+    /* background: #ff710a; */
+    
     margin-bottom: 0;
     text-align: left;
     overflow-y: auto;
@@ -718,7 +726,7 @@ body.nav-opened .nav {
     text-align: right;
     font-size: 1.2rem;
     vertical-align: bottom;
-    color: #B8B8B8;
+    /* color: #B8B8B8; */
     content: counter(item, lower-roman);
     counter-increment: item;
 }
@@ -751,10 +759,10 @@ body.nav-opened .nav {
     height: 1px;
 }
 
-.nav a:link,
-.nav a:visited {
-    color: #B8B8B8;
-}
+/* .nav a:link, */
+/* .nav a:visited { */
+/*     color: #B8B8B8; */
+/* } */
 
 .nav li.nav-current a,
 .nav a:hover,
@@ -855,7 +863,7 @@ body.nav-opened .nav {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    height: 38px;
+    height: 50px;
     padding: 1px 0 5px 0;
     width: auto;
 }
@@ -915,8 +923,11 @@ body.nav-opened .nav {
 /* When the navigation is opened */
 .nav-opened .menu-button {
     padding: 0 12px;
-    background: #111;
-    border-color: #111;
+    /* background: #111; */
+    /* border-color: #111; */
+    background: #ffa500;
+    background-color: #ffa500;
+    
     color: #fff;
     -webkit-transform: translate3D(94px, 0, 0);
         -ms-transform: translate3D(94px, 0, 0);
@@ -953,12 +964,20 @@ body.nav-opened .nav {
     color: #fff;
 }
 
+.page-title span.orange {
+    color: #ffa500;
+}
+
+.page-title span.text {
+    display: inline-block;
+}
+
 .page-description {
     margin: 0;
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
+    /* font-family: "Merriweather", serif; */
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
@@ -1000,6 +1019,7 @@ body.nav-opened .nav {
     padding-bottom: 4rem;
     border-bottom: #EBF2F6 1px solid;
     word-wrap: break-word;
+    
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post

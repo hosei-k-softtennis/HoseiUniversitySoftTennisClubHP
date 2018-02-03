@@ -42,22 +42,22 @@ exclude: [vendor]
 # repo defaults to USERNAME.github.io
 # Branch defaults to "source" for USERNAME.github.io
 # or "master" otherwise
-safe: false
-lsi: false
-username: hosei-k-softtennis
-repo: https://github.com/hosei-k-softtennis/HoseiUniversitySoftTennisClubHP
-branch: master
-relative_source: ../jasper/
-destination: ../jasper-pages/
-production_url: http://hosei-k-softtennis.github.io/HoseiUniversitySoftTennisClubHP/author/
-source_url: https://github.com/hosei-k-softtennis/HoseiUniversitySoftTennisClubHP
+# safe: false
+# lsi: false
+# username: myjekyll
+# repo: jasper
+# branch: master
+# relative_source: ../jasper/
+# destination: ../jasper-pages/
+# production_url:  https://myjekyll.github.io/jasper/
+# source_url:  https://github.com/myjekyll/jasper/
 
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
+# exclude:
+#   - README.md
+#   - Rakefile
+#   - Gemfile
+#   - Gemfile.lock
+#   - changelog.md
+#   - "*.Rmd"
+#   - vendor
+#   - .travis.yml
