@@ -2,7 +2,7 @@
 
 法政大学工体連ソフトテニス部ホームページのレポジトリです。
 
-[Jekyll](https://jekyllrb-ja.github.io/)をベースとした[jasper](https://github.com/myjekyll/jasper)テーマを用いたホームページになっています。
+[Jekyll](https://jekyllrb-ja.github.io/)をベースとした[Jasper](https://github.com/myjekyll/jasper)テーマを用いたホームページになっています。
 部員一覧や大会結果などはMarkdownで記述されています。
 
 ## レポジトリのクローン
@@ -56,7 +56,8 @@ $ bundle install
 
 - ホームページをビルドする
   - jekyll serverを立ち上げるとビルドされます。
-
+  - http://127.0.0.1:4000/HoseiUniversitySoftTennisClubHP/ にアクセスすると、ビルドされたホームページを見ることができます。
+  
 ``` shell
 $ cd HoseiUniversitySoftTennisClubHP
 $ jekyll server
