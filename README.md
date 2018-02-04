@@ -1,103 +1,142 @@
-## Jasper
+# 法政大学工体連ソフトテニス部ホームページ
 
-[![Build Status](https://travis-ci.org/myJekyll/jasper.svg?branch=master)](https://travis-ci.org/myJekyll/jasper)
-[![Ruby](https://img.shields.io/badge/ruby-2.5.2-blue.svg?style=flat)](http://travis-ci.org/myJekyll/jasper)
-[![Jekyll](https://img.shields.io/badge/jekyll-3.6.2-blue.svg?style=flat)](http://travis-ci.org/myJekyll/jasper)
+法政大学工体連ソフトテニス部ホームページのレポジトリです。
 
-This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper).
+[Jekyll](https://jekyllrb-ja.github.io/)をベースとした[jasper](https://github.com/myjekyll/jasper)テーマを用いたホームページになっています。
+部員一覧や大会結果などはMarkdownで記述されています。
 
-You might well ask at this point why bother making a new Casper's clone?
-Although this is inspired by Kasper, there are several **additional** features which make this port closer
-to the original theme. This port is based on the last Casper v1.3.7 (same as v1.4.0 that runs in Ghost 1.0).
+## レポジトリのクローン
 
-**New:** Check out **[Jasper2](https://github.com/myJekyll/jasper2)**, a new port of Casper version 2!
+```shell
+$ git clone https://github.com/hosei-k-softtennis/HoseiUniversitySoftTennisClubHP.git
+```
 
-## Live demo
+## 環境構築
+### rbenv+ruby-buildを使ったRubyの環境構築
 
-[Jasper Live Demo](https://myjekyll.github.io/jasper)
+- rbenvのインストール
+  - https://github.com/rbenv/rbenv#installation
+    - rbenvのレポジトリをクローン
+    - 環境変数の追加
 
-[Casper's Original Here](https://demo.ghost.io)
+``` shell
 
+$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+$ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+```
 
-## Screenshots
+- ruby-buildのインストール
+  - https://github.com/rbenv/ruby-build#installation
+    - ruby-buildのレポジトリをクローンする
+    - 環境変数の追加
+  
+``` shell
+$ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+$ echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_profile
+```
 
-**Home page**
-![home page](https://raw.githubusercontent.com/myjekyll/jasper/master/assets/images/jasper_screen1.png)
+- ホームページ用のRuby環境を構築する
+  - Ruby2.4.2をインストール
+  - Ruby2.4.2をベースにhosei-2.4.2環境を用意
+  - bundleをインストール
+  - bundleを使ってホームページのビルドに必要なパッケージをインストール
+  
+``` shell
+$ rbenv install 2.4.2
+$ mkdir ~/.rbenv/versions/hosei-2.4.2
+$ ruby-build 2.4.2 ~/.rbenv/versions/hosei-2.4.2
+$ cd HoseiUniversitySoftTennisClubHP
+$ rbenv local hosei-2.4.2
+$ gem install bundle
+$ bundle install
+```
 
-**Post page**
-![post page](https://raw.githubusercontent.com/myjekyll/jasper/master/assets/images/jasper_screen2.png)
+## ホームページのビルド
 
-**Author page**
-![author page](https://raw.githubusercontent.com/myjekyll/jasper/master/assets/images/jasper_screen3.png)
+- ホームページをビルドする
+  - jekyll serverを立ち上げるとビルドされます。
 
-**Related posts page**
-![tag page](https://raw.githubusercontent.com/myjekyll/jasper/master/assets/images/jasper_screen4.png)
+``` shell
+$ cd HoseiUniversitySoftTennisClubHP
+$ jekyll server
+```
 
-**Tags page with opened sidebar**
-![sidebar page](https://raw.githubusercontent.com/myjekyll/jasper/master/assets/images/jasper_screen5.png)
+## ホームページの更新
+### ディレクトリ構成
 
-**404 page**
-![related page](https://raw.githubusercontent.com/myjekyll/jasper/master/assets/images/jasper_screen6.png)
+```
+/HoseiUniversitySoftTennisClubHP
+├── README.md
+├── _data
+├── _includes
+├── _layouts
+├── _plugins
+├── _posts
+│   ├── 2011-11-07-post-01.md
+│   ├── 2013-04-01-post-02.md
+│   ├── 2013-12-26-post-03.md
+│   ├── 2014-03-28-post-04.md
+│   └── 2015-04-28-post-05.md
+├── _site
+│   ├── README.md
+│   ├── about
+│   ├── access
+│   ├── assets
+│   │   ├── css
+│   │   ├── fonts
+│   │   ├── images
+│   │   └── js
+│   ├── author
+│   │   └── admin
+│   ├── contact
+│   ├── member
+│   ├── result
+│   └── tag
+│       └── post
+├── about
+│   └── index.md
+├── access
+│   └── index.md
+├── assets
+│   ├── css
+│   ├── fonts
+│   ├── images
+│   └── js
+├── contact
+│   └── index.md
+├── member
+│   └── index.md
+└── result
+    └── index.md
+```
 
-## Jasper theme includes
+### 記事の追加
 
-* Pagination
-* Google Analytics tracking
-* Author's profile with picture
-* Disqus comments (not Ghost standard)
-* Author page (New 07.02.2015)
-* Tag page(s) (New 07.02.2015)
-* 404 page (New 07.02.2015)
-* Toggleable sliding sidebar (New 07.02.2015)
-* Related posts view (New 30.10.2015)
-* Tag description(s) (New 30.10.2015)
-* Code Syntax Highlight (New 24.11.2015)
-* Code Syntax Highlight with [highlight.js](https://highlightjs.org/) (New 06.04.2016)
-* Rss updated to Jekyll v3 (New 06.04.2016)
-* Updated to Casper v1.3.7 **(New 17.11.2017)**  
-* 'Out of the box' support for Multiple Authors **(New 17.11.2017)**  
+- `_post/`の中に`.md`(markdown)形式で追加してください。
+- ファイル名は`year-month-day-post-(number).md`に統一してください。
+- ヘッダーに以下のような情報が必要です。コピペして適宜必要事項を変更してください。
+  - title
+  - date
+  ```
+  ---
+  layout: post
+  cover: 'assets/images/bg_map.jpg'
+  navigation: True
+  title: 【当部活OBさまへ】50周年記念 思い出話の寄稿様式について
+  date: 2015-04-28
+  tags: post
+  subclass: 'post'
+  logo: 'assets/images/hosei_logo_white.png'
+  author: admin
+  categories: admin
+  ---
+  ```
+  
+### 部員一覧の更新
 
-## How to use it
+- `member/index.md`を変更してください。
 
-### Deployment
+### 大会結果の更新
 
-**Important:**  For security reasons, Github does not allow plugins (under _plugins/) when deploying with Github Pages. This means:
-
-**1)** that we need to generate your site locally (more details below) and push the resulting HTML to a Github repository;
-
-**2)** built the site with [travis-ci](https://travis-ci.org/) (with goodies from [jekyll-travis](https://github.com/mfenner/jekyll-travis)) automatically pushing the generated *_site/* files to your *gh-pages* branch.
- This later approach is the one I am currently using to generate the live demo.
-
-For option **1)** simply clone this repository (*master branch*), and then run `bundle exec jekyll serve` inside the directory. Upload the resulting *_site/* contents to your repository (*master branch* if uploading as your personal page (username.github.io) or *gh-pages branch* if uploading as a project page (as for the [demo](https://github.com/myjekyll/jasper/tree/gh-pages)).
-
-For option **2)** you will need to set up travis-ci for your personal fork. Briefly all you need then is to change your details in *[\_config.yml](_config.yml)* so that you can push to your github repo. You will also need to generate a secure key to add to your *[.travis.yml](.travis.yml)* (you can find more info on how to do it in that file). Also make sure you read the documentation from [jekyll-travis](https://github.com/mfenner/jekyll-travis). This approach has clear advantages in that you simply push changes to your files and all the html files are generated for you. Also you get to know if everything is still fine with your site builds. Don't hesitate to contact me if you still have any issues (see below about issue tracking).
-
-### Author pages
-
-In order to properly generate author pages you need to rename the field *categories* in the front matter of every post to match that of your each author *username* as defined in the *[\_config.yml](_config.yml)* file.
-With the latest update, multiple author blogs are now supported out of the box.
-
-## Issues and contributing
-
-This install builds well with Ruby v2.4.2 and Jekyll v3.6.2. If you run into any problems please log them on the [issue tracker](https://github.com/myjekyll/jasper/issues).
-
-Feel free pull-request your patches and fixes.
-
-## Thanks
-
-
-Many thanks to the Ghost team for all the design work that allows to make this clone possible. Also many thanks to all contributors, that help keeping the project alive and updated :smile:
-
-
-## Copyright & License
-
-Same licence as the one provided by Ghost's team. See Casper's theme [license](GHOST.txt).
-
-Copyright (C) 2015-2017 - Released under the MIT License.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+- `result/index.md`を変更してください。
