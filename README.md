@@ -1,5 +1,7 @@
 # 法政大学工体連ソフトテニス部ホームページ
 
+[![Build Status](https://travis-ci.org/hosei-k-softtennis/HoseiUniversitySoftTennisClubHP.svg?branch=master)](https://travis-ci.org/hosei-k-softtennis/HoseiUniversitySoftTennisClubHP)
+
 法政大学工体連ソフトテニス部ホームページのレポジトリです。
 
 [Jekyll](https://jekyllrb-ja.github.io/)をベースとした[Jasper](https://github.com/myjekyll/jasper)テーマを用いたホームページになっています。
